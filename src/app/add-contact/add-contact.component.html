@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>CONTACT BOOK</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone no</th>
+            <th>image</th>
+        </tr>
+        <tr *ngFor="let contact of contacts">
+            <td>{{contact[0]}}</td>
+            <td>{{contact[1]}}</td>
+            <td>{{contact[2]}}</td>
+            <td><img src={{contact[3]}}></td>
+        </tr>
+    </table>
+    <br><br><br><br>
+    <!-- <form> -->
+        <input type="text" placeholder="enter name" [(ngModel)]="name"><br><br>
+        <input type="email" placeholder="enter email" [(ngModel)]="email"><br><br>
+        <input type="text" placeholder="enter number" [(ngModel)]="phone"><br><br>
+        <button id="submit" (click)="addContact()">Add Contact</button>
+    <!-- </form> -->
+    
+</body>
+</html>
+
+
+

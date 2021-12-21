@@ -1,0 +1,53 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+th{
+    font-size: 200%;
+    width: 25vw;
+    height: 10vh;
+}
+
+td{
+    text-align: center;
+    font-size: 125%;
+}
+
+td>img{
+    width: 10%;
+    height: 10%;
+}
+
+input{
+    height: 7vh;
+    width: 50vw;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-left: 10%;
+}
+
+
+button{
+    font-size: 1.5em;
+    padding: 1%;
+    border-radius: 1em;
+    border:1px solid white;
+    color: white;
+    background-color: blueviolet;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 53%;
+}
+
+button:hover{
+    background-color: red;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    background-color: blueviolet;
+    padding-top: 1%;
+    height: 6vh;
+}

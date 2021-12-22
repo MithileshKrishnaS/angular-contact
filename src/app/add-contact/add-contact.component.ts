@@ -11,24 +11,25 @@ export class AddContactComponent implements OnInit {
       "Mithilesh",
       "mithilesh@gmail.com",
       "8678575985",
-      'assets/img1.png'
+      'assets/images/img1.png'
     ],
     [
       "Manow",
       "manow@gmail.com",
       "9686876541",
-      'assets/img1.png'
+      'assets/images/img1.png'
     ],
     [
       "Mei",
       "mei@gmail.com",
       "7688948474",
-      'assets/img1.png'
+      'assets/images/img1.png'
     ],
   ];
   name='';
   email='';
   phone='';
+  image='';
   
   constructor() {  }
   
@@ -37,8 +38,8 @@ export class AddContactComponent implements OnInit {
   i=3;
   addContact(){
     
-    console.log(this.i);
-    this.contacts.push([this.name,this.email,this.phone,'assets/img1.png']);
+    console.log(this.image);
+    this.contacts.push([this.name,this.email,this.phone,'assets/images/'+this.image+'.png']);
     console.log(this.name);
   }
 }
